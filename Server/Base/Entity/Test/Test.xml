@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contain>
+  <Runtime.Entity.EntityModel>
+    <Identify Id="TestUnit">
+      <Id>TestUnit</Id>
+      <name>Test</name>
+      <index>0</index>
+      <license>0</license>
+      <transform>
+        <point>(0,0)</point>
+        <speed>(0,0)</speed>
+        <angle>0</angle>
+        <rotate>0</rotate>
+      </transform>
+      <components Length="2">
+        <Type Value="Runtime.Component.EntityController">
+          <index>0</index>
+        </Type>
+        <Type Value="Runtime.Component.EntityDriver">
+          <count>0</count>
+          <time>0</time>
+          <index>0</index>
+        </Type>
+      </components>
+    </Identify>
+  </Runtime.Entity.EntityModel>
+</Contain>

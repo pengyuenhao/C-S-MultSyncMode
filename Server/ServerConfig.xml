@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contain>
+  <Runtime.Res.ServerPropertieConfig>
+    <Identify Id="Server">
+      <Id>null</Id>
+      <name>Server</name>
+      <description>This A Host Server</description>
+      <primarilyIp>null</primarilyIp>
+      <isEnableBroadcast>True</isEnableBroadcast>
+      <primarilyPort>40000</primarilyPort>
+      <maxConnect>20</maxConnect>
+    </Identify>
+  </Runtime.Res.ServerPropertieConfig>
+</Contain>
