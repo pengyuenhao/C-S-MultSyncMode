@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contain>
+  <Runtime.Entity.EntityModel>
+    <Identify Id="KuaFu">
+      <Id>KuaFu</Id>
+      <name>KuaFu</name>
+      <index>0</index>
+    </Identify>
+  </Runtime.Entity.EntityModel>
+</Contain>

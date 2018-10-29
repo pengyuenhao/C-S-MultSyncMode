@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67651F64-BA9D-4185-8939-C60A483883F0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ServerRuntimeCmd</RootNamespace>
+    <AssemblyName>ServerRuntimeCmd</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-Editor">
+      <HintPath>D:\Program\UIContext\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-Editor-firstpass">
+      <HintPath>D:\Program\UIContext\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Server\FSM\LocalFSM.cs" />
+    <Compile Include="Server\FSM\ServerFSM.cs" />
+    <Compile Include="Server\Main\ServerCommandLine.cs" />
+    <Compile Include="Server\Main\ServerNetConfig.cs" />
+    <Compile Include="Server\Main\ServerMain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\Handle\ServerNetReadBuffer.cs" />
+    <Compile Include="Server\Handle\ServerNetCmdData.cs" />
+    <Compile Include="Server\Handle\ServerNetRequestCmd.cs" />
+    <Compile Include="Server\Main\ServerNetThread.cs" />
+    <Compile Include="Server\Handle\ServerNetRequestData.cs" />
+    <Compile Include="Server\Server\ServerControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Dll\ClientRuntime\ClientRuntime\ClientRuntime.csproj">
+      <Project>{30f61b28-095f-496b-bbf3-bf3ee73db54d}</Project>
+      <Name>ClientRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Dll\ExtendFunc\ExtendFunc\ExtendFunc.csproj">
+      <Project>{ebb6edb7-81ae-4937-b881-73f935c140e4}</Project>
+      <Name>ExtendFunc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Dll\UdpPlugin\UdpPlugin\UdpPlugin.csproj">
+      <Project>{0ab8834b-f0de-4415-9a84-1134b65bdf23}</Project>
+      <Name>UdpPlugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

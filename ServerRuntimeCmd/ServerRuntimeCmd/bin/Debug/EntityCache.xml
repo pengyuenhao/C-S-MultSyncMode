@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contain>
+  <Runtime.Entity.BufferData>
+    <Identify Id="null">
+      <Id>null</Id>
+      <time>13110</time>
+      <start>200</start>
+      <length>0</length>
+      <entitys Length="0" />
+      <cmds>null</cmds>
+    </Identify>
+  </Runtime.Entity.BufferData>
+</Contain>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Contain>
+  <Runtime.Entity.BufferData>
+    <Identify Id="null">
+      <Id>null</Id>
+      <time>0</time>
+      <start>0</start>
+      <length>0</length>
+      <entitys Length="2">
+        <Type Value="System.Collections.Generic.KeyValuePair`2[[System.Int32],[Runtime.Entity.EntityModel]]">
+          <key>123</key>
+          <value>
+            <Id>TestUnit</Id>
+            <name>Test</name>
+            <index>0</index>
+            <license>0</license>
+            <transform>
+              <position>(0,0)</position>
+              <speed>(0,0)</speed>
+              <angle>0</angle>
+              <rotate>0</rotate>
+            </transform>
+            <components Length="2">
+              <Type Value="Runtime.Component.EntityController">
+                <index>0</index>
+                <transform>
+                  <position>(0,0)</position>
+                  <speed>(0,0)</speed>
+                  <angle>0</angle>
+                  <rotate>0</rotate>
+                </transform>
+              </Type>
+              <Type Value="Runtime.Component.EntityDriver">
+                <count>888</count>
+                <time>0</time>
+                <index>0</index>
+                <rotateTransform>0</rotateTransform>
+                <speedTransform>(0,0)</speedTransform>
+                <transform>
+                  <position>(0,0)</position>
+                  <speed>(0,0)</speed>
+                  <angle>0</angle>
+                  <rotate>0</rotate>
+                </transform>
+              </Type>
+            </components>
+          </value>
+        </Type>
+        <Type Value="System.Collections.Generic.KeyValuePair`2[[System.Int32],[Runtime.Entity.EntityModel]]">
+          <key>456</key>
+          <value>
+            <Id>TestUnit</Id>
+            <name>Test</name>
+            <index>0</index>
+            <license>0</license>
+            <transform>
+              <position>(0,0)</position>
+              <speed>(0,0)</speed>
+              <angle>0</angle>
+              <rotate>0</rotate>
+            </transform>
+            <components Length="2">
+              <Type Value="Runtime.Component.EntityController">
+                <index>0</index>
+                <transform>
+                  <position>(0,0)</position>
+                  <speed>(0,0)</speed>
+                  <angle>0</angle>
+                  <rotate>0</rotate>
+                </transform>
+              </Type>
+              <Type Value="Runtime.Component.EntityDriver">
+                <count>777</count>
+                <time>0</time>
+                <index>0</index>
+                <rotateTransform>0</rotateTransform>
+                <speedTransform>(0,0)</speedTransform>
+                <transform>
+                  <position>(0,0)</position>
+                  <speed>(0,0)</speed>
+                  <angle>0</angle>
+                  <rotate>0</rotate>
+                </transform>
+              </Type>
+            </components>
+          </value>
+        </Type>
+      </entitys>
+      <cmds>null</cmds>
+    </Identify>
+  </Runtime.Entity.BufferData>
+</Contain>
